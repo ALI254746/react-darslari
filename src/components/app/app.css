@@ -1,0 +1,22 @@
+.app{
+    height: 100vh;
+    color:black;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.content{
+    
+    background-color: #fff;
+   
+    padding:5rem 0;
+    border-radius: 40%;
+}
+.search-panel{
+    margin-top: 0;
+    padding:1.5rem;
+    border-radius: 4px;
+    background-color: #fcfafc;
+    box-shadow: 10px 10px 20px rgba(0,0,0.1);
+    color: cadetblue;
+}
+   
