@@ -1,22 +1,28 @@
 .app{
-    height: 100vh;
-    color:black;
+    max-height: 70vh;
+   
     max-width: 1000px;
     margin: 0 auto;
 }
 .content{
     
-    background-color: #fff;
-   
-    padding:5rem 0;
-    border-radius: 40%;
+    background-color:#fcfafc;
+    padding:2rem 0;
+    border-radius:10%;
 }
 .search-panel{
-    margin-top: 0;
     padding:1.5rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: cadetblue;
     border-radius: 4px;
     background-color: #fcfafc;
     box-shadow: 10px 10px 20px rgba(0,0,0.1);
     color: cadetblue;
 }
-   
+.app-filter{
+  padding-top:2rem;
+}
+.kino-list{
+    color:aquamarine;
+    
+}

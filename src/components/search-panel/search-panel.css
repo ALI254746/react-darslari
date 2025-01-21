@@ -3,5 +3,7 @@
     border-radius: 4px;
     background-color: #fcfafc;
     box-shadow: 10px 10px 20px rgba(0,0,0.1);
-    color: cadetblue;
+    background: url('icons8-search-16.png') no-repeat right center;
+    background-size: 32px 32px; /* Rasm o'lchamiga qarab moslang */
+     padding-right: 2px; /* Rasm o'lchamiga qarab moslang */
 }
