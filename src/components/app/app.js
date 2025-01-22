@@ -5,6 +5,11 @@ import './app.css'
 import KinoList from "../kino-list/kino-list";
 import KinoAddForm from "../kino-add-form/kino-add-form";
 const App =()=>{
+    const data=[{name:'empaire of osman',viewares:100},
+        {name:'ertigurul',viewares:100},
+        {name:'empaire of king',viewares:100},
+        {name:'tank of war',viewares:100}
+    ]
     return (
     <div className="app font-monospace">
         <div className="content">
@@ -19,7 +24,7 @@ const App =()=>{
         </div>
        
         <div className="kino-list">
-        <KinoList/>
+        <KinoList  data={data}/>
         </div>
         <div className="kino-add-form">
             <KinoAddForm/>
