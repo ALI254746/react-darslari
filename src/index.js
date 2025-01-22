@@ -2,13 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from "./components/app/app"
 import './index.css';
+import Props from './components/props/props'
 
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  <App/>
+  
+  <Props/>
   </React.StrictMode>
 );
 
