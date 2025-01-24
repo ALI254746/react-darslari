@@ -1,8 +1,17 @@
 import './kino-list-item.css'
 
-const KinoListItem = ({name,viewares}) => {
+const KinoListItem = ({name,viewares,favourite}) => {
+//1-usul
+  //  let className='list-group-item d-flex justify-content-between'
+// if(favourite){
+//   className+= ' favourite'
+// }
+
+
   return (
-    <li className='list-group-item d-flex justify-content-between'>
+    //1-usul davomi
+    // <li className={className}>
+    <li className={`list-group-item d-flex justify-content-between ${favourite && 'favourite'}`}>
         <span className='list-group-item-label'>{name}</span>
         <input type="number" className='list-group-item-input' defaultValue={viewares}/>
         <div className='d-flex justify-content-center align-items-center'>
