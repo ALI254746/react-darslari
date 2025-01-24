@@ -6,7 +6,7 @@ const kinoList = ({data}) => {
     <ul className="kinoList">
       {data.map(item=>(
         //1-usul
-        <KinoListItem name={item.name} viewares={item.viewares} favourite={item.favourite}/>
+        <KinoListItem key={item.id} name={item.name} viewares={item.viewares} favourite={item.favourite}/>
         //2-usul
         // <KinoListItem {...item}/>
       ))}

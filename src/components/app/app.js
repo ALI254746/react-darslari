@@ -5,10 +5,10 @@ import './app.css'
 import KinoList from "../kino-list/kino-list";
 import KinoAddForm from "../kino-add-form/kino-add-form";
 const App =()=>{
-    const data=[{name:'empaire of osman',viewares:100,favourite:false},
-        {name:'ertigurul',viewares:100 ,favourite:true},
-        {name:'empaire of king',viewares:10,favourite:true},
-        {name:'tank of war',viewares:10,favourite:false}
+    const data=[{id:1,name:'empaire of osman',viewares:100,favourite:false},
+        {id:2,name:'ertigurul',viewares:100 ,favourite:true},
+        {id:3,name:'empaire of king',viewares:10,favourite:true},
+        {id:4,name:'tank of war',viewares:10,favourite:false}
     ]
     return (
     <div className="app font-monospace">
