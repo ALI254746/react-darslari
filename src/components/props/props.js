@@ -24,6 +24,7 @@ class User extends Component{
         super(props)
         this.state={
             counter:10,
+            age:''
             
         }
         //2-usul
@@ -56,12 +57,19 @@ class User extends Component{
            counter:0
         }),()=>{})
     }
+    changeHandler=(e,name)=>{
+        console.log(name)
+        this.setState({
+        age:e.target.value,
+        })
+        
+    }
     render(){
         const {firstName,lastName,link}=this.props
         return(
             <div className="w-50 mx-auto">
                 <div className="border p-3 mt-5">
-                <h1>Mening ismim -{firstName.name} yoshim-{firstName.age},sharifim -{lastName()}</h1>
+                <h1>Mening ismim -{firstName.name} yoshim-{this.state.age},sharifim -{lastName()}</h1>
                 <a href={link}>youtube kanali</a>
                 </div>
                 <div className="mt-3">
@@ -72,6 +80,10 @@ class User extends Component{
                     <button onClick={this.reStart} className="btn btn-info">restart</button>
                     <p>{this.state.counter}</p>
                 </div>
+                <form>
+                    <span>yoshingiz</span>
+                    <input type="number" className="form-control" onChange={e=>this.changeHandler(e,"sammi")}/>
+                </form>
             </div>
         )
 
