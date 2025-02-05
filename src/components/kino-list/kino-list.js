@@ -1,12 +1,12 @@
 import './kino-listcss.css'
 import KinoListItem from '../kino-list-item/kino-list-item'
 
-const kinoList = ({data}) => {
+const kinoList = ({data ,onDelete}) => {
   return (
     <ul className="kinoList">
       {data.map(item=>(
         //1-usul
-        <KinoListItem key={item.id} name={item.name} viewares={item.viewares} favourite={item.favourite}/>
+        <KinoListItem key={item.id} name={item.name} viewares={item.viewares} favourite={item.favourite} onDelete={()=>onDelete(item.id)}/>
         //2-usul
         // <KinoListItem {...item}/>
       ))}
